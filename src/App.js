@@ -9,6 +9,7 @@ function Button(){
   return <button onClick={() => alert('Selamat Datang')}>Coba klik saya</button>
 }
 
+//merender function yang diatas
 function App() {
   return <div>
     <HelloWorld />
