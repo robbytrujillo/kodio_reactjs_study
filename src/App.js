@@ -1,13 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 
+function HelloWorld(props){
+  return <div>{props.kata}</div>
+}
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <HelloWorld kata = "Siapa Anda?"/>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Hello World!
         </p>
         <a
           className="App-link"
