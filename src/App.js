@@ -1,30 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function HelloWorld(props){
-  return <div>{props.kata}</div>
+//Aplikasi sederhana hello world
+function HelloWorld(){
+  return <div style={ {backgroundColor: 'blue'}}>Hello World</div>
+}
+
+function Button(){
+  return <button onClick={() => alert('Selamat Datang')}>Coba klik saya</button>
 }
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <HelloWorld kata = "Siapa Anda?"/>
-        <p>
-          Hello World!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <div>
+    <HelloWorld />
+    <Button />
+  </div>
 }
 
 export default App;
